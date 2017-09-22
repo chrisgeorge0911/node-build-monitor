@@ -42,6 +42,17 @@ module.exports = function () {
                     callback(err);
                     return;
                 }
+
+                if ( self.config.latestBuildOnlyPerProject) {
+                  var singlePipeline = [];
+                  if (pipelines.length > 0) {
+                    singlePipeline.push(pipelines[0]);
+                    console.log(":" + singlePipeline[0].id);
+
+                    pipelines = singlePipeline;
+                  }
+                }
+
                 async.map(pipelines, function(pipeline, callback) {
                     getPipelineDetails(project, pipeline.id, callback);
                 }, callback);
