@@ -47,7 +47,6 @@ module.exports = function () {
                   var singlePipeline = [];
                   if (pipelines.length > 0) {
                     singlePipeline.push(pipelines[0]);
-                    console.log(":" + singlePipeline[0].id);
 
                     pipelines = singlePipeline;
                   }
