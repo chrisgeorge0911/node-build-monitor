@@ -3,6 +3,22 @@
 [![Dependency Status](https://david-dm.org/marcells/node-build-monitor.svg)](https://david-dm.org/marcells/node-build-monitor)
 [![Known Vulnerabilities](https://snyk.io/test/github/marcells/node-build-monitor/badge.svg)](https://snyk.io/test/github/marcells/node-build-monitor)
 [![Stories in Ready](https://badge.waffle.io/marcells/node-build-monitor.png?label=ready&title=Ready)](https://waffle.io/marcells/node-build-monitor)
+## HOW TO START
+
+Clone the repo!
+
+### To Register
+sudo pm2 start app/app.js (to register)
+
+###Once registered
+- sudo pm2 start app
+- sudo pm2 restart app
+- sudo pm2 stop app
+
+It _should_ start automatically on reboot (only requiring the browser to be opened and pointed at localhost:3000).
+
+
+
 
 ## node-build-monitor
 
